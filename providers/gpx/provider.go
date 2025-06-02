@@ -62,16 +62,16 @@ func (p Provider) ParseEvent(raw []byte) (*provider.Event, error) {
 	event.StartTime = gpx.Metadata.Timestamp
 	event.Type = eventType
 
-	event.Points = make(map[time.Time]units.Point)
+	event.Points = make(map[time.Time]provider.Point)
 	event.HeartRate = make(map[time.Time]float32)
 	event.Cadence = make(map[time.Time]float32)
 	event.Power = make(map[time.Time]float32)
 
 	// Parse track points
 	for _, segment := range gpx.Track.Segments {
-		var p units.Point
+		var p provider.Point
 
-		p.Elevation = units.Meters(segment.Elevation)
+		p.Elevation = provider.Meters(segment.Elevation)
 		p.Longitude = segment.Longitude
 		p.Latitude = segment.Latitude
 
