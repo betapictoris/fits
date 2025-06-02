@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"codeberg.org/betapictoris/fits/provider"
+	"github.com/betapictoris/fits/provider"
 )
 
 // --- Unsupported by the GPX provider --- //

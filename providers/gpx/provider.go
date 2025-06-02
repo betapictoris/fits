@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"time"
 
-	"codeberg.org/betapictoris/fits/provider"
+	"github.com/betapictoris/fits/provider"
 )
 
 type Provider struct{}
@@ -24,9 +24,9 @@ func (p Provider) GetMetadata() provider.Metadata {
 			HomepageURL: "https://www.hai.haus/",
 		},
 
-		HomepageURL:   "https://codeberg.org/betapictoris/fits",
-		RepositoryURL: "https://codeberg.org/betapictoris/fits",
-		IssuesURL:     "https://codeberg.org/betapictoris/fits",
+		HomepageURL:   "https://github.com/betapictoris/fits",
+		RepositoryURL: "https://github.com/betapictoris/fits",
+		IssuesURL:     "https://github.com/betapictoris/fits",
 	}
 }
 

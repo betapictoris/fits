@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"codeberg.org/betapictoris/fits/provider"
+	"github.com/betapictoris/fits/provider"
 )
 
 func main() {
